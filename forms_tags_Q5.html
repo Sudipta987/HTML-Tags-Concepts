@@ -1,0 +1,82 @@
+<!-- Q5 : W.A.P to Implement the Tags Used to Create a Form (e.g.Sign Up form) in HTML. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <h1>Forms in HTML</h1>
+  <!-- Form Starts here  -->
+  <form action="/submit.php">
+    <!-- Text Input for Name  -->
+    <div>
+      <lable for="name">Name </lable>
+      <input id="name" type="text" placeholder="Enter Name" required>
+    </div>
+    <!-- Phone Input  -->
+    <div>
+      <lable for="name">Phone </lable>
+      <input id="name" type="tel" placeholder="Enter Phone" required>
+    </div>
+    <!-- Email Input  -->
+    <div>
+      <lable for="email">Email</lable>
+      <input id="email" type="email" placeholder="Enter Email">
+    </div>
+    <!-- Password input  -->
+    <div>
+      <lable for="password">Password</lable>
+      <input id="password" type="password" placeholder="Enter Password" required>
+    </div>
+    <!-- Date Input  -->
+    <div>
+      <lable for="dob">Date of Birth</lable>
+      <input id="dob" type="date" required>
+    </div>
+    <!-- DropDown (select input) for Gender  -->
+    <div>
+      <lable for="gender">Gender</lable>
+      <select id="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option vlaue="other">Other</option>
+      </select>
+    </div>
+    <!-- Radio Buttons for Subscription Plan  -->
+    <div>
+      <p>Subscription Plan</p>
+      <input id="basic" type="radio" name="subscription" value="basic">
+      <lable for="basic">Basic</lable>
+
+      <input id="premium" type="radio" name="subscription" value="premium">
+      <lable for="premium">Premium</lable>
+
+      <input id="vip" type="radio" name="subscription" value="vip">
+      <lable for="vip">VIP</lable>
+    </div>
+    <!-- Checkbox for agreeing to terms  -->
+    <div>
+      <input id="terms" type="checkbox" required>
+      <lable for="terms">I Agree to the Terms and Conditions</lable>
+    </div>
+    <!-- Textarea for Comments  -->
+    <div>
+      <lable for="comments">Comments</lable>
+      <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+    </div>
+    <!-- Submit Button  -->
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+    <!-- End of the Form  -->
+  </form>
+</body>
+
+</html>
+
+
