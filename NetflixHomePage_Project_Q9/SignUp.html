@@ -1,0 +1,97 @@
+<!-- This contains the User Sign Up page mainly Illustrates the <form>,<input> and many more related various tage in HTML. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Python/NetflixLogo.png" type="png">
+    <title>SignUP Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Create an Account/Sign Up</h1>
+        <section>
+            <article>
+                <!-- Starts the Sign Up page from here -->
+                <form action="submit.from">
+                    <!-- Text Input for Name -->
+                    <div>
+                        <lable for="name">Name</lable>
+                        <input id="name" type="text" placeholder="Enter your name" required>
+                    </div>
+                    <!-- Email Input -->
+                     <div>
+                        <lable for="email">Email</lable>
+                        <input id="email" type="email" placeholder="Enter your email ">
+                     </div>
+                     <!-- Mobile No input -->
+                      <div>
+                        <lable for="phone">Mobile</lable>
+                        <input id="phone" type="tel" placeholder="Enter your mobile no" required>
+                      </div>
+                      <!-- Date input -->
+                       <div>
+                        <lable for="dob">DOB</lable>
+                        <input id="dob" type="date" >
+                       </div>
+                       <!-- Password Input -->
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" type="password" placeholder="Enter password" required>
+                        </div>
+                        <!-- DropDown (Select Input) for Gender -->
+                         <div>
+                            <lable for="gender">Gender</lable>
+                         <select id="gender">
+                            <option value="disabled selected">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select> 
+                        </div>
+                         <!-- Radio Button for Subscription plan -->
+                         <div>
+                            <p><b>Choose an Subscription plan from below</b></p>
+                            <input id="mobile" type="radio" name="subscription" value="mobile">
+                            <label for="mobile">Mobile</label>
+                            <input id="basic" type="radio" name="subscription" value="basic">
+                            <label for="basic">Basic</label>
+                            <input id="standard" type="radio" name="subscription" value="standard">
+                            <label for="standard">Standard</label>
+                            <input id="premium" type="radio" name="subscription" value="premium">
+                            <label for="premium">Premium</label>
+                         </div>
+                         <!-- Checkbox for Agreeing Terms -->
+                          <div>
+                            <input id="terms" type="checkbox" required>
+                            <label for="terms">I Agree all Terms and Conditions</label>
+                          </div>
+                          <!-- Text Area for Interested Categories -->
+                           <div>
+                            <label for="textarea">Enter your interested Categories</label>
+                            <textarea id="textarea" placeholder="Enter your  genre" rows="4"></textarea>
+                           </div>
+                           <!-- Submit button -->
+                            <div>
+                                <button type="submit">Submit</button>
+                            </div>
+                </form>
+            </article>
+        </section>
+        <aside>
+            <div>
+                <h3>You already have an Account! Please Sign In</h3>
+                <a href="https://www.netflix.com/login" target="_blank"><button type="submit">Sign In</button> </a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
